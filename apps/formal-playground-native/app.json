@@ -1,0 +1,26 @@
+{
+  "expo": {
+    "privacy": "public",
+    "version": "1.0.0",
+    "name": "Formal Playground",
+    "slug": "formal-playground-native",
+    "sdkVersion": "32.0.0",
+    "platforms": ["ios", "android"],
+
+    "orientation": "portrait",
+    "icon": "./src/assets/icon.png",
+    "splash": {
+      "image": "./src/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+
+    "assetBundlePatterns": ["**/*"],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "packagerOpts": {
+      "config": "rn-cli.config.js"
+    }
+  }
+}

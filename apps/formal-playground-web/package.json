@@ -1,0 +1,32 @@
+{
+  "private": true,
+  "version": "0.0.0",
+  "name": "@kevinwolf/formal-playground-web",
+  "scripts": {
+    "start": "start-storybook -c src -p 3000",
+    "build": "echo \"Run yarn build-storybook to build storybook for production\"",
+    "build-storybook": "build-storybook -c src"
+  },
+  "dependencies": {
+    "@emotion/core": "^10.0.10",
+    "@emotion/styled": "^10.0.10",
+    "@kevinwolf/formal-web": "^0.0.0",
+    "@storybook/addon-actions": "^5.0.5",
+    "@storybook/addon-centered": "^5.0.5",
+    "@storybook/addon-links": "^5.0.5",
+    "@storybook/addons": "^5.0.5",
+    "@storybook/react": "^5.0.5",
+    "emotion-theming": "^10.0.10",
+    "react": "^16.8.5",
+    "react-dom": "^16.8.5",
+    "storybook-readme": "^5.0.1",
+    "yup": "^0.27.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@types/storybook__react": "^4.0.1",
+    "awesome-typescript-loader": "^5.2.1",
+    "babel-loader": "^8.0.5",
+    "react-scripts": "2.1.8"
+  }
+}

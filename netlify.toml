@@ -1,0 +1,12 @@
+[build]
+  base = "apps/formal-playground-web"
+  command = "yarn build-storybook"
+  publish = "storybook-static"
+
+[build.environment]
+  YARN_VERSION = "1.13.0"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
