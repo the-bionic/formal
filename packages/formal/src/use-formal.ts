@@ -45,7 +45,7 @@ export default function useFormal<Schema>(
   const validate = useCallback(() => {
     if (!schema) {
       throw new Error(
-        'You can call validate if you have not provided any schema.'
+        'You cannot call validate if you have not provided any schema.'
       )
     }
 
