@@ -58,8 +58,13 @@
     }
   },
   "lint-staged": {
+    "README.md": [
+      "doctoc"
+    ],
+    "docs/*.md": [
+      "doctoc"
+    ],
     "**/*.md": [
-      "doctoc",
       "prettier --write",
       "git add"
     ],
