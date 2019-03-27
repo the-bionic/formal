@@ -84,7 +84,7 @@ For usage with React Web, refer to [@kevinwolf/formal-web](./packages/formal-web
 
 ### Usage with React Native
 
-For usage with React Web, refer to [@kevinwolf/formal-native](./packages/formal-native) README.
+For usage with React Native, refer to [@kevinwolf/formal-native](./packages/formal-native) README.
 
 <!-- END usage -->
 
@@ -126,7 +126,7 @@ For more examples and specific recipes, [visit the online storybook](https://rea
 
 If you have any question, suggestion or recommendation, please [open an issue](issues/new) about it.
 
-If you decided you want to introduced something to the project, please read [contribution guidelines](./docs/contributing.md) first.
+If you decided you want to introduce something to the project, please read [contribution guidelines](./docs/contributing.md) first.
 
 <!-- END contributing -->
 

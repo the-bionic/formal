@@ -169,7 +169,7 @@ export default function App() {
 
 ## Reducing boilerplate
 
-In order to reduce boilerplate, you can install one of two packages depending wether if you are on web or mobile. On that way, you will receive some prop getters that you just have to spread to your inputs and buttons. ✨
+In order to reduce boilerplate, you can install one of two packages depending on whether you are on web or mobile. That way, you will receive some prop getters that you just have to spread to your inputs and buttons. ✨
 
 - [@kevinwolf/formal-web](http://npmjs.com/package/@kevinwolf/formal-web)
 - [@kevinwolf/formal-native](http://npmjs.com/package/@kevinwolf/formal-native)
