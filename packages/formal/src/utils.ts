@@ -6,9 +6,11 @@ import { FormalErrors } from './types'
 export function formatYupErrors<Values>(yupError: any): FormalErrors<Values> {
   const errors: any = {} as FormalErrors<Values>
 
-  for (const err of yupError.inner) {
-    if (!errors[err.path]) {
-      errors[err.path] = err.message
+  if(typeof yupError === 'object' && yupError.hasOwnProperty('inner')){
+    for (const err of yupError.inner) {
+      if (!errors[err.path]) {
+        errors[err.path] = err.message
+      }
     }
   }
 
