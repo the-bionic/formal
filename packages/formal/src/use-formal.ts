@@ -73,22 +73,6 @@ export default function useFormal<Schema>(
     clearErrors()
   }, [clearErrors, lastValues])
 
-  const submit = useCallback(async () => {
-    if (schema) {
-      try {
-        await validate()
-      } catch (error) {
-        return
-      }
-    }
-
-    setIsSubmitting(true)
-    await onSubmit(values)
-    setLastValues(values)
-    setIsSubmitted(true)
-    setIsSubmitting(false)
-  }, [schema, validate, onSubmit, values])
-
   const getFieldProps = useCallback(
     (field: keyof Schema) => ({
       disabled: isSubmitting,
@@ -113,6 +97,26 @@ export default function useFormal<Schema>(
     }),
     [errors, isDirty, isSubmitting, isValidating]
   )
+
+  const submit = useCallback(async () => {
+    if (schema) {
+      try {
+        await validate()
+      } catch (error) {
+        return
+      }
+    }
+
+    setIsSubmitting(true)
+    await onSubmit(values, {
+      setErrors,
+      clearErrors,
+      reset,
+    })
+    setLastValues(values)
+    setIsSubmitted(true)
+    setIsSubmitting(false)
+  }, [schema, onSubmit, values, validate, setErrors, clearErrors, reset])
 
   return {
     isDirty,

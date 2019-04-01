@@ -1,8 +1,37 @@
 import { Schema as YupSchema } from 'yup'
 
+export interface FormalState<Schema> {
+  // Flags.
+  isDirty: boolean
+  isValid: boolean
+  isValidating: boolean
+  isSubmitting: boolean
+  isSubmitted: boolean
+
+  // State.
+  values: Schema
+  errors: FormalErrors<Schema>
+
+  // Callbacks.
+  change: (field: keyof Schema, value: any) => void
+  setErrors: (errors: FormalErrors<Schema>) => void
+  clearErrors: () => void
+  validate: () => void
+  reset: () => void
+  submit: () => void
+
+  // Getters.
+  getFieldProps: (field: keyof Schema) => FormalFieldProps
+  getResetButtonProps: () => FormalResetButtonProps
+  getSubmitButtonProps: () => FormalSubmitButtonProps
+}
+
 export interface FormalConfig<Schema> {
   schema?: YupSchema<Schema>
-  onSubmit: (values: Schema) => void
+  onSubmit: (
+    values: Schema,
+    formalState: Pick<FormalState<Schema>, 'clearErrors' | 'setErrors' | 'reset'>
+  ) => void
 }
 
 export type FormalErrors<Schema> = {
@@ -31,28 +60,3 @@ export interface FormalSubmitButtonProps {
   disabled: boolean
 }
 
-export interface FormalState<Schema> {
-  // Flags.
-  isDirty: boolean
-  isValid: boolean
-  isValidating: boolean
-  isSubmitting: boolean
-  isSubmitted: boolean
-
-  // State.
-  values: Schema
-  errors: FormalErrors<Schema>
-
-  // Callbacks.
-  change: (field: keyof Schema, value: any) => void
-  setErrors: (errors: FormalErrors<Schema>) => void
-  clearErrors: () => void
-  validate: () => void
-  reset: () => void
-  submit: () => void
-
-  // Getters.
-  getFieldProps: (field: keyof Schema) => FormalFieldProps
-  getResetButtonProps: () => FormalResetButtonProps
-  getSubmitButtonProps: () => FormalSubmitButtonProps
-}

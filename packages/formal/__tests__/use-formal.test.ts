@@ -217,6 +217,7 @@ describe('useFormal()', () => {
   })
 
   describe('.submit()', () => {
+    it('should pass formalState to onSubmit', async () => {})
     it('should call validate() before submitting', async () => {})
     it('should call onSubmit function passed with the current values', () => {})
     // Should we test isSubmitted and isSubmitting here? Since they
