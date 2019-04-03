@@ -65,6 +65,7 @@ Also, some of those packages does not provide out of the box support for both we
 - [Included packages](#included-packages)
 - [API Reference](#api-reference)
 - [Examples and recipes](#examples-and-recipes)
+- [Articles / blog posts](#articles--blog-posts)
 - [Contributors](#contributors)
 - [Contributing](#contributing)
 - [Other solutions](#other-solutions)
@@ -112,6 +113,16 @@ For more examples and specific recipes, [visit the online storybook](https://rea
 
 <!-- END examples -->
 
+## Articles / blog posts
+
+<!-- START community -->
+
+> 💡 _If you have written any blog post or article about Formal, please open a PR to add it here._
+
+- Featured on [React Status #133](https://react.statuscode.com/issues/132).
+
+<!-- END community -->
+
 ## Contributors
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
@@ -141,7 +152,3 @@ This is heavily inspired on [formik](https://github.com/jaredpalmer/formik), whi
 ## License
 
 [MIT](./LICENSE)
-
-```
-
-```
