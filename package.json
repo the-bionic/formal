@@ -18,17 +18,19 @@
     "start:web": "concurrently \"yarn build --watch\" \"yarn workspace @kevinwolf/formal-playground-web start\"",
     "start:native": "concurrently \"yarn build --watch\" \"yarn workspace @kevinwolf/formal-playground-native start\""
   },
+  "dependencies": {},
   "devDependencies": {
-    "@babel/core": "^7.4.0",
+    "@babel/core": "^7.4.3",
     "@types/jest": "^24.0.11",
-    "@types/node": "^11.11.8",
-    "@types/react": "^16.8.8",
+    "@types/node": "^11.13.0",
+    "@types/react": "^16.8.11",
     "@types/yup": "^0.26.12",
-    "@typescript-eslint/eslint-plugin": "^1.5.0",
-    "codecov": "^3.2.0",
+    "@typescript-eslint/eslint-plugin": "^1.6.0",
+    "codecov": "^3.3.0",
+    "concurrently": "^4.1.0",
     "doctoc": "^1.4.0",
     "dotenv-cli": "^2.0.0",
-    "eslint": "^5.15.3",
+    "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",
     "eslint-config-prettier": "^4.1.0",
     "eslint-import-resolver-typescript": "^1.1.1",
@@ -37,12 +39,17 @@
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^1.6.0",
     "husky": "^1.3.1",
-    "jest": "^24.5.0",
+    "jest": "^24.7.0",
     "lerna": "^3.13.1",
     "lint-staged": "^8.1.5",
     "prettier": "^1.16.4",
-    "ts-jest": "^24.0.0",
-    "typescript": "^3.3.4000"
+    "ts-jest": "^24.0.1",
+    "typescript": "^3.4.1"
+  },
+  "resolutions": {
+    "@storybook/addon-actions/react": "^16.8.6",
+    "@storybook/components/react": "^16.8.6",
+    "@storybook/ui/react": "^16.8.6"
   },
   "jest": {
     "transform": {
@@ -76,8 +83,5 @@
       "prettier --write",
       "git add"
     ]
-  },
-  "dependencies": {
-    "concurrently": "^4.1.0"
   }
 }
