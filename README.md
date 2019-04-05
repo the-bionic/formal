@@ -120,6 +120,7 @@ For more examples and specific recipes, [visit the online storybook](https://rea
 > 💡 _If you have written any blog post or article about Formal, please open a PR to add it here._
 
 - Featured on [React Status #133](https://react.statuscode.com/issues/132).
+- Featured on [JavaScript Weekly #431](https://javascriptweekly.com/issues/431).
 
 <!-- END community -->
 
