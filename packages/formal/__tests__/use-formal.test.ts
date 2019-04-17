@@ -127,10 +127,15 @@ describe('useFormal()', () => {
         })
       )
       const newName = 'Logan'
+      const newLastName = 'Hi'
 
-      act(() => result.current.change('firstName', newName))
+      act(() => {
+        result.current.change('firstName', newName)
+        result.current.change('lastName', newLastName)
+      })
 
       expect(result.current.values.firstName).toBe(newName)
+      expect(result.current.values.lastName).toBe(newLastName)
     })
   })
 

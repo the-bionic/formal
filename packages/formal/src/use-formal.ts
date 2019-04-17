@@ -33,9 +33,9 @@ export default function useFormal<Schema>(
 
   const change = useCallback(
     (field: keyof Schema, value: any): void => {
-      setValues({ ...values, [field]: value })
+      setValues((prevValues: Schema) => ({ ...prevValues, [field]: value }))
     },
-    [values]
+    []
   )
 
   const clearErrors = useCallback(() => {
