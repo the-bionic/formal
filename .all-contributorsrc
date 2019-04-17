@@ -56,6 +56,16 @@
       "contributions": [
         "doc"
       ]
+    },
+    {
+      "login": "hilkeheremans",
+      "name": "Hilke Heremans",
+      "avatar_url": "https://avatars0.githubusercontent.com/u/10352224?v=4",
+      "profile": "https://github.com/hilkeheremans",
+      "contributions": [
+        "bug",
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
