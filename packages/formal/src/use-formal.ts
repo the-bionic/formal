@@ -60,8 +60,9 @@ export default function useFormal<Schema>(
         await schema[validationMethod](values, { abortEarly: false })
         resolve()
       } catch (error) {
-        setErrors(formatYupErrors<Schema>(error))
-        reject()
+        const validationErrors = formatYupErrors<Schema>(error)
+        setErrors(validationErrors)
+        reject(validationErrors)
       } finally {
         if (isAsync) setIsValidating(false)
       }
