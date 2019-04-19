@@ -17,7 +17,7 @@
   },
   "devDependencies": {
     "@kevinwolf/expo-yarn-workspaces": "^0.1.0",
-    "@types/expo": "^32.0.9",
-    "@types/react-native": "^0.57.42"
+    "@types/expo": "^32.0.11",
+    "@types/react-native": "^0.57.46"
   }
 }
